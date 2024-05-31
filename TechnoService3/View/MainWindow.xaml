@@ -1,0 +1,23 @@
+﻿<Window x:Class="TechnoService3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TechnoService3"
+        mc:Ignorable="d"
+        Title="Техносервис - Главная" Height="450" Width="300" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Content="Главная" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="32"/>
+        <Button Grid.Row="1" x:Name="newRequestButton" Content="➕Новая заявка" Margin="60,20" FontSize="16" Click="newRequestButton_Click"/>
+        <Button Grid.Row="2" x:Name="manageRequestsButton" Content="✏️Управление заявками" Margin="60,20" FontSize="16" Click="manageRequestsButton_Click"/>
+        <Button Grid.Row="3" x:Name="requestsListButton" Content="📂Реестр заявок" Margin="60,20" FontSize="16" Click="requestsListButton_Click"/>
+        <Button Grid.Row="4" x:Name="usersManageButton" Content="👥Пользователи" Margin="60,20" FontSize="16" Click="usersManageButton_Click"/>
+    </Grid>
+</Window>
